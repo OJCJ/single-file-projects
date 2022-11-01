@@ -83,7 +83,7 @@ async def play(ctx, *query:str):
 	if not voice.is_playing():
 		playSong(ctx, musicQueue[0][1])
 
-@client.command(aliases = ['disconnect', 'dc', 'fuckoff'])
+@client.command(aliases = ['disconnect', 'dc'])
 async def leave(ctx):
 	voice = discord.utils.get(client.voice_clients, guild=ctx.guild)
 	if voice.is_connected():
