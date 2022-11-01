@@ -5,7 +5,7 @@ Packages needed: `pygame`\
 *Windows:* `python continuous-collision-simulation.py`\
 *Mac & Linux:* `python3 continuous-collision-simulation.py`
 
-### Word searcher
+### Word searcher (missing comments/documentation)
 Packages needed: none\
 **Running the program (with english):**\
 *Windows:* `python word-search.py english`\
