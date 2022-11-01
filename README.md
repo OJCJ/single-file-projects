@@ -13,3 +13,4 @@ Packages needed: none\
 
 ## Not yet public
 - Level generation algorithms
+- Discord music bot
