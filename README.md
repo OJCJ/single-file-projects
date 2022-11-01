@@ -14,7 +14,7 @@ Packages needed: none\
 ### Discord music bot (no comments/documentation)
 To use this code you will need to have set up a discord bot. The bot will be online as long as the program is running, if it is run locally.\
 Packages needed: `discord`, `youtube_dl`, `re`, `discord.py`, `pytube`\
-**Running the program (with english):**\
+**Running the program:**\
 *Windows:* `python musicbot.py`\
 *Mac & Linux:* `python3 musicbot.py`
 
