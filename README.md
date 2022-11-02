@@ -12,7 +12,8 @@ Packages needed: none\
 *Mac & Linux:* `python3 word-search.py english`
 
 ### Discord music bot (no comments/documentation)
-To use this code you will need to have set up a discord bot. The bot will be online as long as the program is running, if it is run locally and not cloud hosted.\
+To use this code you will need to have set up a discord bot. The bot will be online\
+as long as the program is running, if it is run locally and not cloud hosted.\
 Packages needed: `youtube_dl`, `discord.py`, `pytube`\
 **Running the program:**\
 *Windows:* `python musicbot.py`\
