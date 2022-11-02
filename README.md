@@ -24,3 +24,4 @@ Known issues: none\
 
 ## Not yet public
 - Level generation algorithms
+- Snake game
