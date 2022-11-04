@@ -22,6 +22,11 @@ Known issues: none\
 *Windows:* `python musicbot.py`\
 *Mac & Linux:* `python3 musicbot.py`
 
+### Firefox CSS for Safari 16 stylising
+
+Code needed for styling Firefox to look like Safari 16. Tested and working on Firefox v. 106.0.4.
+The contents of the "Firefox Safarified" directory should be copied to your chrome folder, and then everything should work.
+
 ## Not yet public
 - Level generation algorithms
 - Snake game
