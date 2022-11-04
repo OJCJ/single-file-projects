@@ -13,7 +13,7 @@ Known issues: Doesn't work properly with accented characters.\
 *Windows:* `python word-search.py english`\
 *Mac & Linux:* `python3 word-search.py english`
 
-### Discord music bot (no comments/documentation)
+### Discord music bot (broken)
 To use this code you will need to have set up a discord bot. The bot will be online\
 as long as the program is running, if it is run locally and not cloud hosted.\
 Packages needed: `youtube_dl`, `discord.py`, `pytube`\
