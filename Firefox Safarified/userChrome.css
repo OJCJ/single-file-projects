@@ -180,10 +180,9 @@ menupopup :-moz-any(menu:last-child,menuitem:last-child) {margin-bottom:0px !imp
   border-color: transparent;}
 
 #urlbar {
-  border: 0 !important;
-  border-bottom: 1px solid #ffffff30 !important;
+  border: 1.5px solid #ffffff30 !important;
   border-radius: 10px 10px 10px 10px !important;
-  background-color: rgba(0, 0, 0, 0.35);}
+  background-color: rgb(50, 50, 52);} /*rgba(0, 0, 0, 0.35);}*/
 
 #urlbar {
   box-shadow: none !important;}
@@ -194,6 +193,11 @@ menupopup :-moz-any(menu:last-child,menuitem:last-child) {margin-bottom:0px !imp
   
 #urlbar[breakout] {
   height: auto !important;}
+
+/*  */
+#urlbar .urlbar-input-box {
+    text-align: center;
+}
   
 /* Megabar */
 #urlbar[breakout][breakout-extend][open] {
