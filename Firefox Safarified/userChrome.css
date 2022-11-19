@@ -182,7 +182,7 @@ menupopup :-moz-any(menu:last-child,menuitem:last-child) {margin-bottom:0px !imp
 #urlbar {
   border: 1.5px solid #ffffff30 !important;
   border-radius: 10px 10px 10px 10px !important;
-  background-color: rgb(50, 50, 52);} /*rgba(0, 0, 0, 0.35);}*/
+  background-color: rgb(50, 50, 52);} /*rgb(50, 50, 52);}*/
 
 #urlbar {
   box-shadow: none !important;}
@@ -235,30 +235,6 @@ menupopup :-moz-any(menu:last-child,menuitem:last-child) {margin-bottom:0px !imp
 #new-tab-button .toolbarbutton-icon {
   width: calc(2 * var(--toolbarbutton-inner-padding) + 12px) !important;
   height: calc(2 * var(--toolbarbutton-inner-padding) + 12px) !important;}
-
-/* Design of the plus/newtab button */
-toolbar
-  #tabs-newtab-button:not([disabled="true"]):not([checked]):not([open]):not(:active):hover
-  > .toolbarbutton-icon,
-toolbar
-  #new-tab-button:not([disabled="true"]):not([checked]):not([open]):not(:active):hover
-  > .toolbarbutton-icon {
-  border: 0 !important;
-  border-radius: 20px 20px 20px 20px !important;
-  background-image: none !important;
-  background-color: #404040d9 !important;}
-
-toolbar
-  #tabs-newtab-button:not([disabled="true"]):-moz-any([open], [checked], :hover:active)
-  > .toolbarbutton-icon,
-toolbar
-  #new-tab-button:not([disabled="true"]):-moz-any([open], [checked], :hover:active)
-  > .toolbarbutton-icon {
-  border: 0 !important;
-  border-bottom: 1px solid #ffffff30 !important;
-  border-radius: 20px 20px 20px 20px !important;
-  background-image: none !important;
-  background-color: rgba(0,0,0,0.35) !important;}
 
 /* Center tab title */
 .tab-label-container {
@@ -358,9 +334,9 @@ toolbar
 
 /* Main BAR */
 #navigator-toolbox {
-  background-color: rgb(50, 50, 52) !important;
+  background-color: rgb(50, 50, 52) !important; /* rgb(50, 50, 52) */
   --tabs-border-color: none !important;
-  --my-tab-min-width: 160px !important; /* 36px */
+  --my-tab-min-width: 140px !important; /* 36px */
   --tabs-navbar-shadow-size: 0px !important;
   border-bottom: 1px solid #252525  !important;}
 
@@ -383,8 +359,7 @@ isnt formated for different border radius */
   opacity: 0.8 !important;}
 
 /* Fix the Height of a tab because 
-if you change --tab-min-height it doesnt work for fullcreen
- */
+if you change --tab-min-height it doesnt work for fullcreen */
 #TabsToolbar {
   padding-top: 0px !important;
   padding-bottom: 3px !important;}
@@ -398,12 +373,12 @@ if you change --tab-min-height it doesnt work for fullcreen
 .tabbrowser-tab .tab-background[selected="true"] {
   border: 0 !important;
   background-image: none !important;
-  background-color: #323234 !important;}
+  background-color: rgb#323234 !important;} /* #323234 */
 
 .tabbrowser-tab .tab-background:not([selected]) {
   border: 0 !important;
   background-image: none !important;
-  background-color: #212122 !important;}
+  background-color: #212122 !important;} /* #212122 */
 
 /* Normal tabs design on hover */
 #tabbrowser-tabs
@@ -412,7 +387,7 @@ if you change --tab-min-height it doesnt work for fullcreen
   > .tab-background:not([selected="true"]) {
   border: 0 !important;
   background-image: none !important;
-  background-color: #262628 !important;}
+  background-color: #262628 !important;} /* #262628 */
 
 /* Hide new tab button (+)*/
 #tabs-newtab-button {
@@ -422,11 +397,16 @@ if you change --tab-min-height it doesnt work for fullcreen
 #alltabs-button {
   display: none !important;}
 
+/* Hide "Private browsing" text and icon */
+#private-browsing-indicator-with-label {
+	display: none;
+}
+
 /* Multiselect tabs design on hover */
 #tabbrowser-tabs .tabbrowser-tab .tab-background[multiselected="true"] {
   border: 0 !important;
   background-image: none !important;
-  background-color: #262628 !important;}
+  background-color: #262628 !important;} /* #262628 */
 
 /* Fixing Multiselect */
 .tab-background[multiselected="true"]:not([selected="true"])
@@ -436,6 +416,10 @@ if you change --tab-min-height it doesnt work for fullcreen
 /* Hides bookmarks icons for non-folder items */
 toolbarbutton.bookmark-item:not([container]) > .toolbarbutton-icon {
   display: none !important;}
+
+/* Change bookmarks folder icon color */
+toolbarbutton.bookmark-item[container] > .toolbarbutton-icon {
+  fill: #BBBBBB !important;}
 
 /* Remove space between tabs */
 #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs])
@@ -459,7 +443,7 @@ toolbarbutton.bookmark-item:not([container]) > .toolbarbutton-icon {
 
 /* Bookmarks bar with BLUR need layout.css.backdrop-filter.enabled = true rgba(50, 50, 52, 0.85)*/
 #PersonalToolbar {
-  background-color: rgba(50, 50, 52, 1) !important;}
+  background-color: rgba(50, 50, 52, 1) !important;} /* rgba(50, 50, 52, 1) */
 
 :root:-moz-lwtheme {
 	--arrowpanel-background:  rgba(34, 34, 36, 1) !important;
